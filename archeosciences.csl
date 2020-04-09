@@ -17,7 +17,7 @@
     <issn>1960-1360</issn>
     <eissn>2104-3728</eissn>
     <summary>Style pour ArchéoSciences, revue d'Archéométrie.</summary>
-    <updated>2020-04-09T14:42:02+00:00</updated>
+    <updated>2020-04-09T15:18:43+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="fr">
@@ -136,16 +136,6 @@
       </else>
     </choose>
   </macro>
-  <macro name="version">
-    <choose>
-      <if match="any" is-numeric="version">
-        <number prefix="v. "/>
-      </if>
-      <else>
-        <text variable="version"/>
-      </else>
-    </choose>
-  </macro>
   <macro name="editor-text">
     <group delimiter=" ">
       <text term="in" text-case="capitalize-first" font-style="italic"/>
@@ -211,10 +201,8 @@
             </group>
           </else-if>
           <else-if type="report dataset" match="any">
-            <group delimiter=" ">
-              <text variable="genre"/>
-              <text macro="version"/>
-            </group>
+            <text variable="genre"/>
+            <text variable="version" prefix="Version "/>
             <text macro="collection"/>
             <text macro="publisher"/>
             <text variable="URL" prefix="URL : "/>
