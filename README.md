@@ -10,3 +10,5 @@ To render an example, use this line at the shell prompt (assuming you have [Pand
 pandoc --filter pandoc-citeproc -s example.md -o example.pdf
 ```
 
+Use CSL editor to find and edit citation styles: <https://editor.citationstyles.org>
+
