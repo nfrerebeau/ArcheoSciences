@@ -17,7 +17,7 @@
     <issn>1960-1360</issn>
     <eissn>2104-3728</eissn>
     <summary>Style pour ArchéoSciences, revue d'Archéométrie.</summary>
-    <updated>2020-04-09T17:01:16+00:00</updated>
+    <updated>2021-06-14T08:02:34+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="fr">
@@ -160,9 +160,9 @@
         <choose>
           <if type="article-journal article-magazine article-newspaper" match="any">
             <group>
-              <text variable="container-title" font-style="italic" suffix=", "/>
-              <text variable="volume" suffix=", "/>
-              <text variable="issue" suffix=" "/>
+              <text variable="container-title" font-style="italic"/>
+              <text variable="volume" prefix=", "/>
+              <text variable="issue" prefix=", "/>
               <text macro="pages" prefix=": "/>
             </group>
           </if>
